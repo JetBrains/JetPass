@@ -1,0 +1,7 @@
+bin/
+*.nupkg
+*.user
+*.suo
+nuget.exe
+obj/
+packages/
