@@ -13,8 +13,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 [assembly: AssemblyCompany("JetBrains")]
 [assembly: AssemblyCopyright("Copyright © 2014 JetBrains.")]
-[assembly: AssemblyVersion("0.1.0")]
-[assembly: AssemblyInformationalVersion("0.1.0-beta")]
+[assembly: AssemblyVersion("0.1.1")]
+[assembly: AssemblyInformationalVersion("0.1.1-beta")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 

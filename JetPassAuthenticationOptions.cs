@@ -131,6 +131,6 @@ namespace JetBrains.Owin.Security.JetPass
     /// <summary>
     /// A list of permissions to request.
     /// </summary>
-    public IList<string> Scope { get; private set; }
+    public IReadOnlyList<string> Scope { get; set; }
   }
 }
