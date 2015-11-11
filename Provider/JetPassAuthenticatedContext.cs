@@ -56,7 +56,7 @@ namespace JetBrains.Owin.Security.JetPass
     /// Gets the JSON-serialized user
     /// </summary>
     /// <remarks>
-    /// Contains the JetPass user obtained from the endpoint https://sso.jetbrains.com/rest/users/me
+    /// Contains the JetPass user obtained from the endpoint https://hub.jetbrains.com/rest/users/me
     /// </remarks>
     public JObject User { get; private set; }
 
