@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://raw.githubusercontent.com/JetBrains/JetPass/master/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/JetBrains/JetPass/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/JetBrains/JetPass</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <title>$title$</title>
@@ -24,8 +23,5 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Debug\JetBrains.Owin.Security.JetPass.dll" target="lib\net45" />
-    <file src="bin\Debug\JetBrains.Owin.Security.JetPass.pdb" target="lib\net45" />
-    <file src="bin\Debug\JetBrains.Owin.Security.JetPass.xml" target="lib\net45" />
   </files>
 </package>
