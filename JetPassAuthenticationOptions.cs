@@ -13,19 +13,19 @@ namespace JetBrains.Owin.Security.JetPass
   {
     public class JetPassAuthenticationEndpoints
     {
-      public JetPassAuthenticationEndpoints() : this(new Uri("https://hub.jetbrains.com")) { }
+      public JetPassAuthenticationEndpoints() : this(new Uri("https://hub.jetbrains.com/api/")) { }
       public JetPassAuthenticationEndpoints(Uri rootUri)
       {
-        AuthorizationEndpoint = new Uri(rootUri, "/rest/oauth2/auth").AbsoluteUri;
-        TokenEndpoint = new Uri(rootUri, "/rest/oauth2/token").AbsoluteUri;
-        UserInfoEndpoint = new Uri(rootUri, "/rest/users/me").AbsoluteUri;
+        AuthorizationEndpoint = new Uri(rootUri, "rest/oauth2/auth").AbsoluteUri;
+        TokenEndpoint = new Uri(rootUri, "rest/oauth2/token").AbsoluteUri;
+        UserInfoEndpoint = new Uri(rootUri, "rest/users/me").AbsoluteUri;
       }
 
       /// <summary>
       /// Endpoint which is used to redirect users to request JetPass access
       /// </summary>
       /// <remarks>
-      /// Defaults to https://hub.jetbrains.com/rest/oauth2/auth
+      /// Defaults to https://hub.jetbrains.com/api/rest/oauth2/auth
       /// </remarks>
       public string AuthorizationEndpoint { get; set; }
 
@@ -33,7 +33,7 @@ namespace JetBrains.Owin.Security.JetPass
       /// Endpoint which is used to exchange code for access token
       /// </summary>
       /// <remarks>
-      /// Defaults to https://hub.jetbrains.com/rest/oauth2/token
+      /// Defaults to https://hub.jetbrains.com/api/rest/oauth2/token
       /// </remarks>
       public string TokenEndpoint { get; set; }
 
@@ -41,7 +41,7 @@ namespace JetBrains.Owin.Security.JetPass
       /// Endpoint which is used to obtain user information after authentication
       /// </summary>
       /// <remarks>
-      /// Defaults to https://hub.jetbrains.com/rest/users/me
+      /// Defaults to https://hub.jetbrains.com/api/rest/users/me
       /// </remarks>
       public string UserInfoEndpoint { get; set; }
     }
